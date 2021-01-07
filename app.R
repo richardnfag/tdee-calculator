@@ -40,13 +40,13 @@ ui <- fluidPage(
         sidebarPanel(
             textInput(inputId = "weight",
                       label = strong("Weight(in kg)"),
-                      value = 0),
+                      value = ""),
             textInput(inputId = "height",
                       label = strong("Height(in cm)"),
-                      value = 0),
+                      value = ""),
             textInput(inputId = "age",
                       label = strong("Age:"),
-                      value = 0),
+                      value = ""),
             radioButtons("sex",
                          strong("Sex:"),
                          c("Female", "Male")),
@@ -57,7 +57,7 @@ ui <- fluidPage(
                             "Active or moderately active",
                             "Vigorously active"
                             )),
-                        selected = "Active or moderately active")),
+                        selected = "Sedentary or light activity")),
         # Show a plot of the generated distribution
         mainPanel(
             h1(textOutput("text")),
