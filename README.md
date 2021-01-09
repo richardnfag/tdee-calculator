@@ -34,3 +34,7 @@ ibmcloud target --cf
 # Push app
 ibmcloud cf push
 ```
+
+## License
+
+Fluor Functions is licensed under the [MIT License](LICENSE)
