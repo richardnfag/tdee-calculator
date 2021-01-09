@@ -18,3 +18,19 @@ export PORT=8080
 ```sh
 R -f app.R
 ```
+
+## Deploy in IBM Cloud Foundry
+
+```sh
+# Install Cloud Foundry plugin
+ibmcloud cf install
+
+# Log in to your IBM Cloud account
+ibmcloud login
+
+# Target a Cloud Foundry org and space
+ibmcloud target --cf
+
+# Push app
+ibmcloud cf push
+```

@@ -1,0 +1,8 @@
+applications:
+  - name: tdee-calculator
+    path: .
+    instances: 1
+    routes:
+      - route: tdee-calculator.mybluemix.net
+    random-route: true
+    memory: 128M
